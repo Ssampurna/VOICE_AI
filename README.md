@@ -21,51 +21,29 @@
 
 ## 📁 Project Structure
 
-
 voice-ai-app/
-
+│
 ├── app/
-
-│   ├── main.py        # Pipeline entry point — orchestrates all steps
-
-│   ├── asr.py         # Whisper speech-to-text (faster-whisper + fallback)
-
-│   ├── tts.py         # Text-to-speech (gTTS + pyttsx3 fallback)
-
-│   ├── llm.py         # Groq API integration + rule-based fallback
-
-│   ├── audio_io.py    # Mic recording, audio loading, playback
-
-│   └── utils.py       # Logging, timestamps, transcript saving
-
+│   ├── main.py          ← Pipeline entry point — orchestrates all steps
+│   ├── asr.py           ← Whisper speech-to-text (faster-whisper + fallback)
+│   ├── tts.py           ← Text-to-speech (gTTS + pyttsx3 fallback)
+│   ├── llm.py           ← Groq API integration + rule-based fallback
+│   ├── audio_io.py      ← Mic recording, audio loading, playback
+│   └── utils.py         ← Logging, timestamps, transcript saving
 │
-
 ├── config/
-
-│   └── settings.py    # All configuration in one place
-
+│   └── settings.py      ← All configuration in one place
 │
-
 ├── data/
-
-│   └── sample_audio/  # Drop your .wav / .mp3 test files here
-
+│   └── sample_audio/    ← Drop your .wav / .mp3 test files here
 │
-
 ├── outputs/
-
-│   ├── transcripts/   # Auto-generated .txt note files
-
-│   └── audio/         # Auto-generated TTS .mp3 response files
-
+│   ├── transcripts/     ← Auto-generated .txt note files
+│   └── audio/           ← Auto-generated TTS .mp3 response files
 │
-
-├── .env               # Your API key
-
+├── .env                 ← Your API key (never commit this)
 ├── requirements.txt
-
 ├── README.md
-
 └── .gitignore
 
 ---
@@ -344,7 +322,6 @@ All settings live in `config/settings.py`. Edit this file to change behavior wit
     │   (All paths, model names, parameters)     │
     └────────────────────────────────────────────┘
 ```
-
 
 ## 📄 License
 
